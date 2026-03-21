@@ -1,9 +1,9 @@
 package com.example.demo.controller;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.model.AuthorizationRequest;
 import com.example.demo.model.SignUpRequest;
 import org.springframework.web.bind.annotation.*;
-@CrossOrigin(origins = "http://localhost:5173");
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/auth")
 public class AuthorizationController {
