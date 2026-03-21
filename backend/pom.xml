@@ -28,6 +28,28 @@
 		</dependency>
 
 
+		<!-- PostgreSQL Driver -->
+		<dependency>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+    		<scope>runtime</scope>
+		</dependency>
+
+		<!-- Spring Data JPA -->
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Flyway -->
+		<dependency>
+    		<groupId>org.flywaydb</groupId>
+    		<artifactId>flyway-core</artifactId>
+		</dependency>
+		<dependency>
+    		<groupId>org.flywaydb</groupId>
+    		<artifactId>flyway-database-postgresql</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -38,6 +60,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -60,6 +83,26 @@
     <version>0.12.7</version>
     <scope>runtime</scope>
 </dependency>
+=======
+		
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+>>>>>>> 34b8b08807d24008dc355d90b4790535d6fdc7b2
 	</dependencies>
 
 	
