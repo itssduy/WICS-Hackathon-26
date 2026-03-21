@@ -1,8 +1,9 @@
 import { useState } from "react";
 import './login.css';
+
 function Login (){
-    const [getUsername, setUsername] = useState();
-    const [getPassword, setPassword] = useState();
+    const [getUsername, setUsername] = useState("");
+    const [getPassword, setPassword] = useState("");
     const onSubmit = async (e) => {
         e.preventDefault();
         const apiURL = 'http://localhost:8080/auth/login';
