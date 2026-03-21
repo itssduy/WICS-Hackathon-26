@@ -1,10 +1,28 @@
 import { useState } from "react";
+import './login.css';
 function Login (){
     const [getUsername, setUsername] = useState();
     const [getPassword, setPassword] = useState();
-    function onSubmit(e){
+    const onSubmit = async (e) => {
         e.preventDefault();
-        console.log(`Username: ${getUsername}, Password: ${getPassword}`);
+        const apiURL = 'http://localhost:8080/auth/login';
+        console.log(apiURL);
+        const response = await fetch(apiURL, {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+                username: getUsername, 
+                password: getPassword 
+            }),
+        });
+
+        
+
+        const data = await response.json();
+        console.log("Server Response:", data);
     }
     return(
         <>
