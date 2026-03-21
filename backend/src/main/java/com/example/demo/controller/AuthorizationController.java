@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.model.AuthorizationRequest;
 import com.example.demo.model.SignUpRequest;
 import org.springframework.web.bind.annotation.*;
