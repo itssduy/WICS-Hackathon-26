@@ -13,6 +13,7 @@ public class SecurityConfig {
 
         http
             .csrf(csrf -> csrf.disable()) // disable for now (API use)
+            .cors(cors -> cors.disable())
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
                     "/landing",

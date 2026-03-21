@@ -1,24 +1,25 @@
 package com.example.demo.controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.model.AuthorizationRequest;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.model.SignUpRequest;
 import org.springframework.web.bind.annotation.*;
-@CrossOrigin(origins = "http://localhost:5173");
+import com.example.demo.model.AuthResponse;
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/auth")
 public class AuthorizationController {
 
     @PostMapping("/signup")
-    public String signup(@RequestBody SignUpRequest request) {
+    public AuthResponse signup(@RequestBody SignUpRequest request) {
         if (!request.getPassword().equals(request.getConfirmPassword())) {
-            return "Passwords do not match";
+            return new AuthResponse("Error: Passwords do not match");
         }
 
-        return "User created: " + request.getEmail();
+        return new AuthResponse("User created: " + request.getEmail());
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody AuthorizationRequest request) {
-        return "Logged in: " + request.getEmail();
+    public AuthResponse login(@RequestBody AuthorizationRequest request) {
+        return new AuthResponse("Logged in: " + request.getEmail());
     }
 }
