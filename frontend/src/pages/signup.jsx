@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './login.css';
+import '../styles/login.css';
 
 const Signup = ()=>{
     const [getUsername, setUsername] = useState("");
@@ -9,9 +9,9 @@ const Signup = ()=>{
     const onSubmit = async (e) => {
         e.preventDefault();
         if (getConfirmPassword == setPassword){
-            const apiURL = 'http://localhost:8080/auth/login';
+            const apiURL = import.meta.env.VITE_API_URL;
             console.log(apiURL);
-            const response = await fetch(apiURL, {
+            const response = await fetch(`${apiURL}/auth/login`, {
                 method: 'POST',
                 mode: "cors",
                 headers: {

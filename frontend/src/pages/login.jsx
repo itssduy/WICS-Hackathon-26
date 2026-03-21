@@ -1,14 +1,15 @@
 import { useState } from "react";
-import './login.css';
+import '../styles/login.css'; 
 
 function Login (){
     const [getUsername, setUsername] = useState("");
     const [getPassword, setPassword] = useState("");
+    
     const onSubmit = async (e) => {
         e.preventDefault();
-        const apiURL = 'http://localhost:8080/auth/login';
+        const apiURL = import.meta.env.VITE_API_URL;
         console.log(apiURL);
-        const response = await fetch(apiURL, {
+        const response = await fetch(`${apiURL}/auth/login`, {
             method: 'POST',
             mode: "cors",
             headers: {
