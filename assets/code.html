@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>I Reflect - Sign Up</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#72544e",
+              "on-secondary": "#f0f2ff",
+              "on-background": "#412923",
+              "secondary-container": "#c8d7ff",
+              "primary-dim": "#7d3f00",
+              "error": "#b02500",
+              "on-surface": "#412923",
+              "secondary-fixed-dim": "#bac9f0",
+              "on-error-container": "#520c00",
+              "outline-variant": "#caa59c",
+              "surface-container": "#ffe2db",
+              "surface-container-lowest": "#ffffff",
+              "secondary-dim": "#414f70",
+              "tertiary-fixed": "#fcb9b0",
+              "primary": "#8f4900",
+              "surface-variant": "#ffd3c9",
+              "tertiary": "#814e47",
+              "surface-tint": "#8f4900",
+              "on-tertiary-fixed": "#4b221d",
+              "on-secondary-fixed-variant": "#455475",
+              "primary-container": "#fe9740",
+              "on-secondary-fixed": "#293857",
+              "on-tertiary-container": "#63352f",
+              "on-tertiary": "#ffefed",
+              "inverse-surface": "#1c0905",
+              "error-dim": "#b92902",
+              "tertiary-dim": "#73423c",
+              "on-tertiary-fixed-variant": "#6e3e38",
+              "secondary-fixed": "#c8d7ff",
+              "surface-bright": "#fff4f2",
+              "surface-dim": "#fec8bc",
+              "secondary": "#4d5b7d",
+              "primary-fixed-dim": "#ee8a34",
+              "on-secondary-container": "#3c4a6b",
+              "on-error": "#ffefec",
+              "tertiary-fixed-dim": "#edaca2",
+              "inverse-on-surface": "#b9958d",
+              "on-primary": "#fff0e7",
+              "on-primary-fixed": "#2a1100",
+              "surface-container-high": "#ffdad2",
+              "outline": "#906f68",
+              "tertiary-container": "#fcb9b0",
+              "on-primary-fixed-variant": "#5c2d00",
+              "surface": "#fff4f2",
+              "on-primary-container": "#4f2600",
+              "primary-fixed": "#fe9740",
+              "inverse-primary": "#fe9740",
+              "error-container": "#f95630",
+              "surface-container-highest": "#ffd3c9",
+              "background": "#fff4f2",
+              "surface-container-low": "#ffede9",
+              "brand-amber": "#f59e0b",
+              "brand-navy": "#1e3a8a",
+              "brand-brown": "#412923"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 244, 242, 0.75);
+            backdrop-filter: blur(24px);
+            box-shadow: 0px 24px 48px rgba(28, 9, 5, 0.12);
+        }
+        .brand-gradient-overlay {
+            background: linear-gradient(180deg, rgba(245, 158, 11, 0.1) 0%, rgba(28, 9, 5, 0.5) 70%, rgba(30, 58, 138, 0.8) 100%);
+        }
+        .sunrise-to-navy {
+            background: linear-gradient(180deg, #fff4f2 0%, #ffd3c9 30%, #4d5b7d 70%, #1e3a8a 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<main class="min-h-screen flex flex-col lg:flex-row overflow-hidden">
+<!-- Left Side: Branding Panel -->
+<section class="relative w-full lg:w-1/2 min-h-[500px] lg:min-h-screen flex items-center justify-center lg:justify-start px-8 lg:px-24 py-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Warm glowing sky with ancient tree" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhZkCRa6lIhN9WVHAARUyjDYDKjRSmPd-2NF8MfisGmoRZPwOF7HwC_bPR4dXYWcJE6zMLnDbjYbjDZrv6t59PFd7Y7MrPaMj_XZkcRZslObodvpTZZwmth0BoXi0B4HxXpGI1bs5Rxsbw7CeEBq8nXgzBDZqNatxUBcTJXdPWMskIg6D-hD3BCLatyD7vfiAK7l__eUw1Ht3dV418x68delgWxA0dV0CWWzkLPGHqF6vjXHdXghclMnaej_8cADM0cL3Uj9h9E6g"/>
+<div class="absolute inset-0 brand-gradient-overlay"></div>
+</div>
+<div class="relative z-10 max-w-xl text-white">
+<div class="flex items-center gap-4 mb-16">
+<img alt="I Reflect Logo" class="w-14 h-14 object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uiiJjYFrcrv8sB2kcCS801RbOi0bUp67Fcf0s-82W9KDb5xiTy8q7pWlB6AfN3R70TGdRCr08n97dtBTKbGvmNhDUSbetouDvHHC4Dnt9fAtaTIMibiq9uli8k827_VK1wx2TjG8-JNr3FJqBT1-MvttH_e9fKlS_l_O87PSwhsWZGKSvG5l4FtwThLFfaC3ZSuo2InOGy1KaDMsqTTJinaGCda0Nf9RGQwNkcSqs62gik5RyWqZeGdPoX-XtkpfFlkO9U6fItO"/>
+<span class="text-3xl font-extrabold tracking-tight font-headline text-white drop-shadow-sm">I Reflect</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] mb-8 text-glow">
+                Give your thoughts a quiet place to land
+            </h1>
+<p class="text-lg lg:text-xl font-body text-white/90 leading-relaxed mb-12 max-w-lg">
+                Take a quiet moment for yourself. I Reflect helps you slow down, sit with meaningful thoughts, and leave feeling a little lighter.
+            </p>
+<div class="space-y-8">
+<div class="flex items-start gap-4 group">
+<div class="mt-1 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-white group-hover:text-on-primary-container" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="flex-1">
+<span class="text-lg font-semibold block">Guided reflection, one question at a time</span>
+</div>
+</div>
+<div class="flex items-start gap-4 group">
+<div class="mt-1 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-white group-hover:text-on-primary-container" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="flex-1">
+<span class="text-lg font-semibold block">Private and personal</span>
+</div>
+</div>
+<div class="flex items-start gap-4 group">
+<div class="mt-1 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-white group-hover:text-on-primary-container" data-icon="potted_plant">potted_plant</span>
+</div>
+<div class="flex-1">
+<span class="text-lg font-semibold block">Built to help you slow down</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Side: Signup Card -->
+<section class="w-full lg:w-1/2 sunrise-to-navy flex flex-col items-center justify-center px-6 lg:px-12 py-16 lg:py-12">
+<div class="w-full max-w-md glass-card p-10 lg:p-14 rounded-3xl border border-white/40">
+<header class="mb-10 text-center">
+<h2 class="text-3xl font-extrabold font-headline text-brand-brown mb-3">Begin your journey</h2>
+<p class="text-on-surface-variant font-body">Set up your space for calmer, more intentional reflection.</p>
+</header>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-sm font-bold font-headline ml-1 text-on-surface-variant">Username</label>
+<input class="w-full px-6 py-4 rounded-2xl bg-white/50 border border-white/20 focus:ring-2 focus:ring-primary focus:bg-white transition-all placeholder:text-outline/70" placeholder="Choose a name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold font-headline ml-1 text-on-surface-variant">Password</label>
+<input class="w-full px-6 py-4 rounded-2xl bg-white/50 border border-white/20 focus:ring-2 focus:ring-primary focus:bg-white transition-all placeholder:text-outline/70" placeholder="Create a secure password" type="password"/>
+<p class="text-[11px] text-on-surface-variant/70 ml-1">Must be at least 8 characters long.</p>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold font-headline ml-1 text-on-surface-variant">Confirm password</label>
+<input class="w-full px-6 py-4 rounded-2xl bg-white/50 border border-white/20 focus:ring-2 focus:ring-primary focus:bg-white transition-all placeholder:text-outline/70" placeholder="Repeat your password" type="password"/>
+</div>
+<button class="w-full py-4 mt-2 bg-primary-container text-on-primary-container font-extrabold rounded-full shadow-lg shadow-primary-container/20 hover:shadow-xl hover:brightness-105 active:scale-[0.98] transition-all duration-200" type="submit">
+                    Create account
+                </button>
+</form>
+<div class="mt-8 flex items-center gap-4">
+<div class="h-px flex-1 bg-outline-variant/30"></div>
+<span class="text-[10px] font-bold text-on-surface-variant/50 uppercase tracking-[0.2em]">or continue with</span>
+<div class="h-px flex-1 bg-outline-variant/30"></div>
+</div>
+<button class="w-full mt-6 py-4 bg-white/80 border border-outline-variant/20 rounded-full font-bold text-on-surface flex items-center justify-center gap-3 hover:bg-white transition-all active:scale-[0.98] shadow-sm">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+                Google
+            </button>
+<p class="mt-8 text-center text-on-surface-variant font-medium">
+                Already have an account? 
+                <a class="text-primary font-bold hover:underline underline-offset-4 decoration-2" href="#">Log in</a>
+</p>
+<footer class="mt-12 text-center text-[11px] text-on-surface-variant/60 font-label leading-relaxed">
+                By continuing, you agree to our <a class="hover:text-primary transition-colors underline" href="#">Terms</a> and <a class="hover:text-primary transition-colors underline" href="#">Privacy Policy</a>.
+                <div class="mt-2">© 2024 I Reflect. All rights reserved.</div>
+</footer>
+</div>
+</section>
+</main>
+<!-- Ambient Background Accents -->
+<div class="fixed top-0 right-0 w-[500px] h-[500px] bg-brand-amber/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
+<div class="fixed bottom-0 right-0 w-[600px] h-[600px] bg-brand-navy/20 blur-[180px] rounded-full pointer-events-none -z-10"></div>
+</body></html>

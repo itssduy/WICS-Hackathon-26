@@ -1,0 +1,97 @@
+/* ============================================
+   Profile Page Styles
+   ============================================ */
+
+.profile-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.profile-header h1 { margin-bottom: var(--space-sm); }
+.profile-header p { color: var(--text-muted); }
+
+.profile-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.profile-card {
+  padding: var(--space-xl);
+}
+
+.profile-card h3 {
+  margin-bottom: var(--space-lg);
+  font-size: 1.1rem;
+}
+
+.profile-field {
+  margin-bottom: var(--space-lg);
+}
+
+.profile-readonly {
+  display: block;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: var(--space-sm) 0;
+}
+
+.profile-plan-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Chips */
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.chip {
+  padding: 8px 18px;
+  background: rgba(143, 73, 0, 0.04);
+  border: 1.5px solid rgba(143, 73, 0, 0.1);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-gentle);
+  text-transform: capitalize;
+}
+
+.chip:hover {
+  background: rgba(143, 73, 0, 0.08);
+}
+
+.chip-selected {
+  background: var(--primary-container);
+  border-color: var(--primary-container);
+  color: var(--text-on-amber);
+  font-weight: 600;
+}
+
+.profile-actions {
+  margin-top: var(--space-md);
+}
+
+.profile-logout {
+  color: var(--text-muted) !important;
+}
+
+.profile-logout:hover {
+  color: var(--error) !important;
+}
