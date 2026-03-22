@@ -1,0 +1,240 @@
+/* ============================================
+   Calendar Page Styles
+   ============================================ */
+
+.calendar-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+.calendar-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+
+/* Streak sidebar */
+.streak-sidebar {
+  padding: var(--space-xl);
+  position: sticky;
+  top: calc(80px + var(--space-lg));
+}
+
+.streak-title {
+  font-size: 1rem;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.streak-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.streak-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.streak-value {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.streak-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Calendar grid */
+.calendar-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-nav h2 {
+  font-size: 1.35rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  padding: var(--space-md);
+}
+
+.cal-header {
+  text-align: center;
+  padding: var(--space-sm);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+}
+
+.cal-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-md);
+  cursor: default;
+  position: relative;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: all var(--duration-fast) var(--ease-gentle);
+  gap: 4px;
+}
+
+.cal-empty {
+  visibility: hidden;
+}
+
+.cal-has-session {
+  cursor: pointer;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.cal-has-session:hover {
+  background: rgba(143, 73, 0, 0.06);
+}
+
+.cal-today {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.cal-today::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 2px solid var(--primary-container);
+  border-radius: var(--radius-md);
+  pointer-events: none;
+}
+
+.cal-selected {
+  background: rgba(245, 158, 11, 0.12) !important;
+}
+
+.cal-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-container);
+}
+
+.cal-lock {
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.cal-locked {
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
+
+/* Day detail */
+.day-detail {
+  padding: var(--space-xl);
+}
+
+.day-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.day-detail-header h3 {
+  font-size: 1.1rem;
+}
+
+.day-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.day-entry {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.day-entry:last-child {
+  border-bottom: none;
+}
+
+.entry-category {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-right: var(--space-sm);
+}
+
+.entry-emotion {
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.entry-summary {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: var(--space-xs);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .calendar-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .streak-sidebar {
+    position: static;
+    order: -1;
+  }
+
+  .streak-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  .streak-stat {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  .streak-value {
+    font-size: 1.5rem;
+  }
+}

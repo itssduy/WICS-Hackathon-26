@@ -1,0 +1,151 @@
+/* ============================================
+   Billing Page Styles
+   ============================================ */
+
+.billing-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+.billing-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.billing-header h1 { margin-bottom: var(--space-sm); }
+.billing-header p { color: var(--text-muted); }
+
+.billing-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+
+/* Current plan */
+.plan-card {
+  padding: var(--space-xl);
+}
+
+.plan-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.plan-name {
+  font-size: 2rem;
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+.plan-limits {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-limits li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.plan-limits li::before {
+  content: '• ';
+  color: var(--text-muted);
+}
+
+/* Pro card */
+.pro-card {
+  padding: var(--space-xl);
+  border: 2px solid var(--primary-container);
+}
+
+.pro-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+}
+
+.pro-badge {
+  padding: 6px 16px;
+  background: var(--primary-container);
+  color: var(--text-on-amber);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.pro-amount {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.pro-period {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.pro-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--space-xl);
+}
+
+.pro-features li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.feature-icon {
+  font-size: 1.1rem;
+}
+
+.billing-cta {
+  width: 100%;
+}
+
+.billing-error {
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.pro-active {
+  text-align: center;
+}
+
+.pro-active-badge {
+  display: inline-block;
+  padding: 8px 24px;
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.pro-active p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .billing-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,143 @@
+/* ============================================
+   Onboarding Page Styles
+   ============================================ */
+
+.onboarding-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: var(--space-lg);
+}
+
+.onboarding-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.onboarding-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px) brightness(0.6);
+}
+
+.onboarding-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 9, 5, 0.3) 0%,
+    rgba(30, 58, 138, 0.5) 100%
+  );
+}
+
+.onboarding-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  padding: var(--space-2xl);
+}
+
+/* Progress dots */
+.onboarding-progress {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(143, 73, 0, 0.15);
+  transition: all var(--duration-normal) var(--ease-gentle);
+}
+
+.progress-dot-active {
+  background: var(--primary-container);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Step content */
+.onboarding-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.onboarding-step h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.onboarding-desc {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: calc(-1 * var(--space-sm));
+}
+
+/* Chips */
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.chip {
+  padding: 8px 18px;
+  background: rgba(143, 73, 0, 0.06);
+  border: 1.5px solid rgba(143, 73, 0, 0.12);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-gentle);
+}
+
+.chip:hover {
+  background: rgba(143, 73, 0, 0.1);
+  border-color: rgba(143, 73, 0, 0.2);
+}
+
+.chip-active {
+  background: var(--primary-container);
+  border-color: var(--primary-container);
+  color: var(--text-on-amber);
+}
+
+.chip-avoid {
+  background: rgba(129, 78, 71, 0.06);
+  border-color: rgba(129, 78, 71, 0.12);
+}
+
+.chip-avoid:hover {
+  background: rgba(129, 78, 71, 0.12);
+}
+
+.chip-avoid-active {
+  background: var(--tertiary);
+  border-color: var(--tertiary);
+  color: white;
+}
+
+/* Actions */
+.onboarding-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-lg);
+  gap: var(--space-md);
+}
+
+.onboarding-actions .btn-primary {
+  margin-left: auto;
+}
